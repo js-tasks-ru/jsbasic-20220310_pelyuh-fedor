@@ -1,6 +1,6 @@
 function makeDiagonalRed(table) {
   const tableCells = table.querySelectorAll(`td`);
-  const tableRow = document.querySelector('tr');
+  const tableRow = table.querySelector('tr');
   const rowsCells = tableRow.querySelectorAll('td');
   // 1 вариант
   // tableCells.forEach( (cell) => {

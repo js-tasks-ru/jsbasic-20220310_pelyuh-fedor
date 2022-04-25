@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
   <meta charset="utf-8" />
@@ -8,6 +8,7 @@
 
   <link rel="stylesheet" href="./index.css" />
   <link rel="stylesheet" href="/assets/styles/common.css" />
+  <link rel="stylesheet" href="/assets/styles/button.css" />
 </head>
 
 <body>
@@ -21,6 +22,9 @@
       modal.setBody(createElement('<div>Тело модального окна</div>'));
 
       modal.open();
+      setTimeout(()=>{modal.setTitle('Trololo')}, 1000);
+      setTimeout(()=>{modal.setBody('<div>Body trololo</div>')}, 2500);
+      setTimeout(()=>{modal.close()}, 4000);
     }
   </script>
 
